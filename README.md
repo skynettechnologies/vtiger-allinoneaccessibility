@@ -1,6 +1,6 @@
 # All in One Accessibility™
 
-Descriptions
+Description
 -------
 
 All in One Accessibility AI Widget Supports 140 Languages, Screen Reader, Voice Navigation, Dictionary, Virtual Keyboard, Accessibility Profiles, Sign language Libras (Brazilian Portuguese) Custom Widget Color, Icon size, Position, GA4 Tracking and custom accessibility statement link are some of the top features. 

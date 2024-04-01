@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    <type>extension</type>
+    <name>Allinoneaccessibility</name>
+    <label>All in One Accessibility</label>
+    <parent>Tools</parent>
+    <version>2.0</version>
+    <dependencies>
+        <vtiger_version>7.0.0</vtiger_version>
+        <vtiger_max_version>7.*</vtiger_max_version>
+    </dependencies>
+    <tables>
+		<table>
+			<name>aioa_widget_settings</name>
+			<sql><![CDATA[CREATE TABLE IF NOT EXISTS `aioa_widget_settings` (
+				id INT AUTO_INCREMENT primary key NOT NULL,
+				`license_key` varchar(255) DEFAULT NULL,
+				`color` varchar(255) DEFAULT NULL,
+				`position` varchar(255) DEFAULT NULL,
+				`icon_type` varchar(255) DEFAULT NULL,
+				`icon_size` varchar(255) DEFAULT NULL,
+                `is_validkey` int(11) NOT NULL default '0'
+				) ENGINE=InnoDB DEFAULT CHARSET=utf8
+			]]></sql>
+		</table>
+	</tables>
+</module>
