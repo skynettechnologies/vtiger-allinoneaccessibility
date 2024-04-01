@@ -1,0 +1,1 @@
+# vitiger-allinoneaccessibility
