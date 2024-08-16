@@ -1,27 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <module>
     <type>extension</type>
-    <name>Allinoneaccessibility</name>
+    <!-- Module name -->
+    <name>AllinOneAccessibility</name>
+    <!-- This is the name that will appear in the Vtiger GUI -->
     <label>All in One Accessibility</label>
+    <!-- Module will be listed under Tools -->
     <parent>Tools</parent>
-    <version>2.0</version>
+    <!-- Module version -->
+    <version>1.1</version>
+    <!-- Dependencies -->
     <dependencies>
+        <!-- To install in Vtiger 6, this needs to be >= 6.0.0 -->
         <vtiger_version>7.0.0</vtiger_version>
-        <vtiger_max_version>7.*</vtiger_max_version>
     </dependencies>
+    <!-- Additional elements (if needed) -->
     <tables>
-		<table>
-			<name>aioa_widget_settings</name>
-			<sql><![CDATA[CREATE TABLE IF NOT EXISTS `aioa_widget_settings` (
-				id INT AUTO_INCREMENT primary key NOT NULL,
-				`license_key` varchar(255) DEFAULT NULL,
-				`color` varchar(255) DEFAULT NULL,
-				`position` varchar(255) DEFAULT NULL,
-				`icon_type` varchar(255) DEFAULT NULL,
-				`icon_size` varchar(255) DEFAULT NULL,
-                `is_validkey` int(11) NOT NULL default '0'
-				) ENGINE=InnoDB DEFAULT CHARSET=utf8
-			]]></sql>
-		</table>
-	</tables>
+        <!-- <table>
+            <name>your_table_name</name>
+            <sqlfile>install.sql</sqlfile>
+        </table> -->
+    </tables>
+    <customize>
+        <handler>
+            <event>module.postinstall</event>
+            <class>AllinOneAccessibility</class>
+            <method>onEnableModule</method>
+        </handler>
+        <handler>
+            <event>module.disabled</event>
+            <class>AllinOneAccessibility</class>
+            <method>onDisableModule</method>
+        </handler>
+    </customize>
 </module>

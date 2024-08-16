@@ -1,163 +1,95 @@
 # All in One Accessibility™
 
-Description
--------
+All in One Accessibility AI Widget Supports 140 Languages and includes 70+ features. Screen Reader, Talk & Type, Voice Navigation, Dictionary, Virtual Keyboard, Accessibility Profiles, Sign language Libras (Brazilian Portuguese) Custom Widget Color, Icon size, Position, Talk & Type, GA4 Tracking and custom accessibility statement link are some of the top features.
 
-All in One Accessibility AI Widget Supports 140 Languages, Screen Reader, Voice Navigation, Dictionary, Virtual Keyboard, Accessibility Profiles, Sign language Libras (Brazilian Portuguese) Custom Widget Color, Icon size, Position, GA4 Tracking and custom accessibility statement link are some of the top features. 
+Our AI automatically remediates images Alternative text and uses the accessibility interface which handles UI and design related adjustments. All in One Accessibility app enhances your website accessibility to people with hearing or vision impairments, motor impaired, color blind, dyslexia, cognitive & learning impairments, seizure and epileptic, and ADHD problems.
 
-Our AI automatically remediates images Alternative text and uses the accessibility interface which handles UI and design related adjustments. All in One Accessibility app enhances your Vitiger CRM accessibility to people with hearing or vision impairments, motor impaired, color blind, dyslexia, cognitive & learning impairments, seizure and epileptic, and ADHD problems. 
+It improves website ADA compliance and browser experience for ADA, WCAG 2.0, 2.1 & 2.2, Section 508, California Unruh Act, Australian DDA, European EAA EN 301 549, UK Equality Act (EA), Israeli Standard 5568, Ontario AODA, Canada ACA, German BITV, France RGAA, Brazilian Inclusion Law (LBI 13.146/2015), Spain UNE 139803:2012, JIS X 8341 (Japan), Italian Stanca Act and Switzerland DDA Standards.
 
-It improves Vitiger CRM ADA compliance and browser experience for ADA, WCAG 2.1 & 2.2, Section 508, California Unruh Act, Australian DDA, European EAA EN 301 549, UK Equality Act (EA), Israeli Standard 5568, Ontario AODA, Canada ACA, German BITV, France RGAA, Brazilian Inclusion Law (LBI 13.146/2015), Spain UNE 139803:2012, JIS X 8341 (Japan), Italian Stanca Act and Switzerland DDA Standards. 
+Follows the best industry security, SEO practices and standards ISO 9001:2015 & ISO 27001:2013 and complies with GDPR, COPPA regulations. Member of W3C and International Association of Accessibility Professionals (IAAP). It is a flexible & lightweight widget that can be changed according to law and reduces the risk of time-consuming accessibility lawsuits.
 
-Follows the best industry security, SEO practices and standards ISO 9001:2015 & ISO 27001:2013 and complies with GDPR, COPPA regulations. Member of W3C and International Association of Accessibility Professionals (IAAP). It is a flexible & lightweight widget that can be changed according to law and reduces the risk of time-consuming accessibility lawsuits. 
+Following features can be added as an addon:
+- PDF/Document Remediation
+- Modify Accessibility Menu
+- White Label and Custom Branding
+- Live Website Translations
+- VPAT / ACR Report
+- Manual Accessibility Audit
 
-Following features can be added as an addon  
--    White Label service  
--    Custom Branding  
--    Live Site translates  
--    Customize Accessibility Menu/widget  
--    Accessibility Monitoring  
--    PDF / Word Document Remediation
+For more details/features, Please visit [All in One Accessibility](https://www.skynettechnologies.com/all-in-one-accessibility).
 
-## Features
-#### Skip Links
-- Skip to Menu
-- Skip to Footer
-- Skip to Navigation
-- Open Accessibility Toolbar
+## Installation
 
-#### Content Adjustments
-- Content Scaling
-- Readable Fonts
-- Highlight Title
-- Highlight Links
-- Text Magnifier
-- Adjust Font Sizing
-- Adjust Line Height
-- Adjust Letter Spacing
-- Align Center
-- Align Left
-- Align Right
+### Prerequisites
+- Vtiger version ^8.0
 
-#### Color and Contrast Adjustments
-- High Contrast
+### Steps
 
-#### Orientation Adjustments
-- Hide Images (Text Only)
-- Miscellaneous
-- Accessibility Statement
-- Dynamic Application Color
-- Choose Application Trigger Button Position
-- Choose Application Position
-- Multi Language
+You can install this addon with two ways.
 
-#### Supports 140 languages
-- English
-- Italian
-- French
-- German
-- Russian
-- Spanish
-- Finnish
-- Portuguese
-- Arab
-- Polish
-- Hungarian
-- Slovak
-- Japanese
-- Turkish
-- Greek
-- Latin
-- Hebrew
-- Bulgarian
-- Catalan
-- Chinese
-- Czech
-- Danish
-- Dutch
-- Hindi
-- Indonesian
-- Korean
-- Malay
-- Norwegian
-- Romanian
-- Slovenian
-- Swedish
-- Thai
-- Ukrainian
-- Vietnamese
-- Bengali
-- Lithuanian
-- Sinhala
-- Amharic
-- Hmong
-- Burmese
-- Latvian
-- Estonian
-- Serbian
-- Portuguese (Brazil)
-- Chinese Traditional
-- Croatian
-- Georgian
-- Hawaiian
-- Welsh
-- Cebuano
-- Samoan
-- Haitian Creole
-- Faroese
-- Montenegrin
-- Australian
-- Azeri
-- Basque
-- Canada
-- Filipino
-- Galician
-- Norwegian
-- Persian
-- Punjabi
-- Spanish (Mexico)
-- United Kingdom
+    1. Log in to your CRM account.
+    2. Click the User Menu on the top right corner of the screen.
+    3. Click the Settings button.
+    4. Go to Module Management.
+    5. Upload Allinoneaccessibility Module file which donloaded from Github directory.  Or Click Extension Store Install All in One Accessibility  extension.
 
-Installation
-------------
-**Step 1.** Log in to your CRM account.
+## User manual
+    1. After Installation you can see All in One Accessibility widget on CRM.
+    2. To customize your “All in One Accessibility” Extension Go to the Tools->All in One Accessibility section.
+    3. Adjust the widget settings as needed for your CRM.
 
-**Step 2.** Click the User Menu on the top right corner of the screen.
+### Module source code
 
-**Step 3.** Click the Settings button.
-
-**Step 4.** Go to Module Management.
-
-**Step 5.** Upload Allinoneaccessibility Module file which donloaded from Github directory.  Or Click Extension Store Install All in One Accessibility  extension.
-
-User manual
--------
-
-**Step 1.** After Installation you can see All in One Accessibility widget on CRM.
-
-**Step 2.** To customize your “All in One Accessibility” Extension Go to the Tools->All in One Accessibility section.
-
-**Step 3.** Add a License Key to use Pro version. Also change the Color, Size, and Position of the Widget as per your Website’s Theme. Click the “Save” option to reflect those changes on the CRM.
-
-Module source code
-------------
-Github (https://github.com/skynettechnologies/vitiger-allinoneaccessibility)
+    Github (https://github.com/skynettechnologies/vitiger-allinoneaccessibility)
 
 ## Screenshots
 
-![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot3.png)
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/Screenshot-1.jpg?v=2)
 
-![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot1.png)
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/Screenshot-2.jpg?v=2)
 
-![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot2.png)
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/Screenshot-3.jpg?v=2)
 
-![App Screenshot](https://www.skynettechnologies.com/sites/default/files/screenshot4.png)
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/Screenshot-4.jpg?v=2)
+
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/Screenshot-5.jpg?v=2)
+
+![App Screenshot](https://www.skynettechnologies.com/sites/default/files/Screenshot-6.jpg?v=2)
 
 ## Video
 
-[![All in One Accessibility](https://img.youtube.com/vi/czwC0PKIqkc/0.jpg)](https://www.youtube.com/watch?v=czwC0PKIqkc)
+[![All in One Accessibility](https://img.youtube.com/vi/I-DjgZyleeI/0.jpg)](https://www.youtube.com/watch?v=I-DjgZyleeI)
 
-## Support
-For any kind of queries/support please Email us at [Skynet Technologies USA LLC Support](mailto:hello@skynettechnologies.com)
+## Documentation
 
+- [Purchase Vtiger All in One Accessibility](https://www.skynettechnologies.com/vtiger-ada-compliant-widget)
+- [How to install All in One Accessibility Addon on Vtiger](https://www.skynettechnologies.com/blog/vtiger-web-accessibility-widget-installation)
+- [All in One Accessibility - Features Guide](https://www.skynettechnologies.com/sites/default/files/accessibility-widget-features-list.pdf)
 
+## Submit a Support Request
+
+Please visit our [support page](https://www.skynettechnologies.com/report-accessibility-problem) and fill out the form. Our team will get back to you as soon as possible.
+
+## Send Us an Email
+
+Alternatively, you can send an email to our support team:
+[hello@skynettechnologies.com](mailto:hello@skynettechnologies.com)
+
+## Partnership Opportunities
+
+#### [Agency Partnership](https://www.skynettechnologies.com/agency-partners)
+
+Partner with us as an agency to provide comprehensive accessibility solutions to your clients. Get access to exclusive resources, training, and support to help you implement and manage accessibility features effectively.
+
+#### [Affiliate Partnership](https://www.skynettechnologies.com/affiliate-partner)
+
+Join our affiliate program and earn commissions by promoting All in One Accessibility™. Share our Widget with your network and help businesses improve their website accessibility while generating revenue.
+
+For more details, Please visit [Partnership Opportunities Page](https://www.skynettechnologies.com/partner-program)
+
+## Credits
+
+This addon is developed and maintained by [Skynet Technologies USA LLC](https://www.skynettechnologies.com)
+
+## Current Maintainers
+- [Skynet Technologies USA LLC](https://github.com/skynettechnologies)

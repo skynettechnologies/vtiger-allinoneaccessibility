@@ -1,70 +1,89 @@
 <?php
+/*+***********************************************************************************
+ * The contents of this file are subject to the vtiger CRM Public License Version 1.1
+ * ("License"); You may not use this file except in compliance with the License
+ * The Original Code is:  vtiger CRM Open Source
+ * The Initial Developer of the Original Code is vtiger.
+ * Portions created by vtiger are Copyright (C) vtiger.
+ * All Rights Reserved.
+ *************************************************************************************/
 
-include_once 'include/Zend/Json.php';
-require_once('data/CRMEntity.php');
-require_once('data/Tracker.php');
+include_once('vtlib/Vtiger/Event.php');
+include_once('vtlib/Vtiger/Module.php');
 
-class Allinoneaccessibility {
+/**
+ * Module class definition
+ */
+class AllinOneAccessibility {
 
     /**
      * Invoked when special actions are performed on the module.
      *
-     * @param String $moduleName
-     * @param String $event_type
+     * @param String Module name
+     * @param String Event Type
      */
-    function vtlib_handler($moduleName, $event_type) {
-        
-        if($event_type == 'module.postinstall') {
-            global $adb;
-            // Initialize settings
-            $sql = "INSERT INTO `aioa_widget_settings` (`color`, `position`, `icon_type`, `icon_size`, `license_key`, `is_validkey`) VALUES ('#420083', 'bottom_right', 'aioa-icon-type-1', 'aioa-medium-icon', '',0);";
-            $adb->pquery($sql,array());
+    function vtlib_handler($moduleName, $eventType) {
+        try {
+            if ($eventType == 'module.postinstall') {
+                $this->addCustomJavaScript();
+                $this->log("The All in One Accessibility module has been installed.");
+            }
 
-            $this->linksManager(true);
-            
-        } else if($event_type == 'module.disabled') {
+            if ($eventType == 'module.enabled') {
+                $this->addCustomJavaScript();
+                $this->registerEvents();
+                $this->log("The All in One Accessibility module has been enabled.");
+            }
 
-            $this->linksManager(false);
+            if ($eventType == 'module.disabled') {
+                $this->removeCustomJavaScript();
+                $this->log("The All in One Accessibility module has been disabled.");
+            }
 
-        } else if($event_type == 'module.enabled') {
-
-            $this->linksManager(true);
-
-        } else if($event_type == 'module.preuninstall') {
-            global $adb;
-            $sql = "DROP TABLE IF EXISTS `aioa_widget_settings`;";
-            $adb->pquery($sql,array());
-           
-        } else if($event_type == 'module.preupdate') {
-            // TODO Handle actions before this module is updated.
-        } else if($event_type == 'module.postupdate') {
-            // TODO Handle actions after this module is updated.
+            if ($eventType == 'module.preuninstall') {
+                $this->removeCustomJavaScript();
+                $this->log("The All in One Accessibility module is about to be uninstalled.");
+            }
+        } catch (Exception $e) {
+            $this->log("Error: " . $e->getMessage());
         }
-
     }
 
     /**
-     * True - add links, false - delete
-     *
-     * @param $flag
+     * Function to add the custom JavaScript to the header
      */
-    function linksManager($flag) {
-        $moduleInstance = Vtiger_Module::getInstance('Allinoneaccessibility');
-
-        $vtigerVersion = vtws_getVtigerVersion();
-        
-        if($vtigerVersion[0] == '7') {
-            $url = 'layouts/v7/modules/Allinoneaccessibility/resources/AioaWidget.js';
-        } else {
-            $url = 'layouts/vlayout/modules/Settings/Allinoneaccessibility/resources/AioaWidget.js';
-        }
-
-        if($flag) {
-            $moduleInstance->addLink('HEADERSCRIPT', 'AllinoneaccessibilityHeaderScript', $url);
-        } else {
-            $moduleInstance->deleteLink('HEADERSCRIPT', 'AllinoneaccessibilityHeaderScript');
+    function addCustomJavaScript() {
+        $moduleInstance = Vtiger_Module::getInstance('AllinOneAccessibility');
+        if ($moduleInstance) {
+            $moduleInstance->addLink('HEADERSCRIPT', 'AllInOneAccessibilityJS', 'modules/AllinOneAccessibility/resources/AioaWidget.js');
         }
     }
-}
 
-?>
+    /**
+     * Function to remove the custom JavaScript from the header
+     */
+    function removeCustomJavaScript() {
+        $moduleInstance = Vtiger_Module::getInstance('AllinOneAccessibility');
+        if ($moduleInstance) {
+            $moduleInstance->deleteLink('HEADERSCRIPT', 'AllInOneAccessibilityJS');
+        }
+    }
+
+    /**
+     * Function to register events
+     */
+    function registerEvents() {
+        $AccountsInstance = Vtiger_Module::getInstance('Accounts');
+        if ($AccountsInstance) {
+            Vtiger_Event::register($AccountsInstance, 'vtiger.entity.aftersave', 'AllinOneAccessibilityHandler', 'modules/AllinOneAccessibility/AllinOneAccessibility.php');
+        }
+    }
+
+    /**
+     * Function to log messages
+     */
+    function log($message) {
+        $logFile = 'modules/AllinOneAccessibility/logs/module.log';
+        file_put_contents($logFile, date('Y-m-d H:i:s') . " - " . $message . PHP_EOL, FILE_APPEND);
+    }
+}
